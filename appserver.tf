@@ -26,7 +26,7 @@ resource "aws_ssm_parameter" "port" {
 resource "aws_ssm_parameter" "database" {
   name  = "/${var.project}/${var.environment}/app/MYSQL_DATABASE"
   type  = "String"
-  value = aws_db_instance.mysql_standalone.db_name
+  value = "testprj"
 }
 resource "aws_ssm_parameter" "username" {
   name  = "/${var.project}/${var.environment}/app/MYSQL_USERNAME"
